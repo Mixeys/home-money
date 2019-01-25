@@ -12,6 +12,6 @@
   <div class="row text-center" *ngIf="!isLoaded">Loading...</div>
   <div class="row" *ngIf="isLoaded">
     <mp-bill-card [bill]="bill" [currency]="currency"></mp-bill-card>
-    <mp-currency-card></mp-currency-card>
+    <mp-currency-card [currency]="currency"></mp-currency-card>
   </div>
 </section>
