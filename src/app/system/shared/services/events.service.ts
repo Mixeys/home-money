@@ -16,4 +16,8 @@ export class EventsService extends BaseApi {
   addEvent(event: MPEvent): Observable<MPEvent> {
     return this.post("events", event);
   }
+
+  getEvents(): Observable<MPEvent[]> {
+    return this.get("events");
+  }
 }
