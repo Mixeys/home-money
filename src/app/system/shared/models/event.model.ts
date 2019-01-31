@@ -5,6 +5,7 @@ export class MPEvent {
     public category: number,
     public date: string,
     public description: string,
-    public id?: string
+    public id?: string,
+    public catName?: string
   ) {}
 }

@@ -29,7 +29,6 @@ export class RecordsPageComponent implements OnInit {
 
   categoryWasEdited(category: Category) {
     this.categories.splice(category.id - 1, 1, category);
-    console.log(this.categories);
     // const idx = this.categories.findIndex(c => c.id === category.id);
     // this.categories[idx] = category;
   }
